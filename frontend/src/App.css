@@ -1,0 +1,53 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body { background: #0f0f13; color: #e0e0e0; font-family: sans-serif; }
+
+.app { max-width: 900px; margin: 0 auto; padding: 20px; }
+
+header { display: flex; justify-content: space-between; align-items: center; padding: 20px 0; border-bottom: 1px solid #222; }
+
+h1 { font-size: 1.5rem; }
+
+.stats { display: flex; gap: 16px; font-size: 0.85rem; color: #888; }
+
+nav { display: flex; gap: 8px; margin: 20px 0; }
+
+nav button { padding: 8px 20px; border: 1px solid #333; background: none; color: #888; border-radius: 6px; cursor: pointer; }
+
+nav button.active { background: #1a1a2e; color: #fff; border-color: #444; }
+
+.chat { display: flex; flex-direction: column; height: 70vh; }
+
+.messages { flex: 1; overflow-y: auto; display: flex; flex-direction: column; gap: 12px; padding: 10px 0; }
+
+.placeholder { color: #444; text-align: center; margin-top: 40px; }
+
+.message { padding: 12px 16px; border-radius: 10px; max-width: 80%; }
+
+.message.user { background: #1a1a2e; align-self: flex-end; }
+
+.message.ai { background: #1a1a1a; align-self: flex-start; border: 1px solid #222; }
+
+.sources { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+
+.sources a { font-size: 0.75rem; color: #4a9eff; text-decoration: none; background: #0d1b2a; padding: 2px 8px; border-radius: 4px; }
+
+.input-row { display: flex; gap: 8px; padding-top: 12px; border-top: 1px solid #222; }
+
+.input-row input { flex: 1; padding: 10px 14px; background: #1a1a1a; border: 1px solid #333; border-radius: 8px; color: #fff; font-size: 1rem; }
+
+.input-row button { padding: 10px 20px; background: #2563eb; border: none; border-radius: 8px; color: #fff; cursor: pointer; }
+
+.input-row button:disabled { opacity: 0.5; }
+
+.news { display: flex; flex-direction: column; gap: 10px; }
+
+.article { display: block; padding: 14px; background: #1a1a1a; border: 1px solid #222; border-radius: 8px; text-decoration: none; color: inherit; }
+
+.article:hover { border-color: #444; }
+
+.source { font-size: 0.75rem; color: #4a9eff; }
+
+.article p { margin: 6px 0 4px; font-size: 0.95rem; }
+
+.date { font-size: 0.75rem; color: #555; }
